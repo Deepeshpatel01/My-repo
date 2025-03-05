@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Form</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="h1">Quizing-For-Learn</h2>
+        <form action="/submit_quiz" method="post" id="myForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <input type="radio" name="q1" value="Paris" id="q1-paris" required>
+                <label for="q1-paris">Paris</label><br>
+                <input type="radio" name="q1" value="London" id="q1-london">
+                <label for="q1-london">London</label><br>
+                <input type="radio" name="q1" value="Berlin" id="q1-berlin">
+                <label for="q1-berlin">Berlin</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is 5 + 3?</p>
+                <input type="radio" name="q2" value="6" id="q2-6" required>
+                <label for="q2-6">6</label><br>
+                <input type="radio" name="q2" value="8" id="q2-8">
+                <label for="q2-8">8</label><br>
+                <input type="radio" name="q2" value="9" id="q2-9">
+                <label for="q2-9">9</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Enter your favorite programming language:</p>
+                <input type="text" name="q3" placeholder="Type your answer here" required>
+            </div>
+
+            <button type="submit" class="submit-btn" onclick="alart">Submit Quiz</button>
+        </form>
+    </div>
+    <script src="fun.js"></script>
+</body>
+</html>
